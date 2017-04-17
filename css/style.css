@@ -1,0 +1,48 @@
+body,ul,li,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;}
+body{font-family: "微软雅黑";font-size: 12px;background: #f7fafc;}
+input:focus{outline: none;}
+
+.wrap{width: 100%;height: 100%;}
+.main{width: 300px;height: 590px;margin: 100px auto;}
+.main-header{width: 100%;}
+.main-header h1{width: 160px;height: 74px;margin: 0 auto;background: url(../img/logo.png);text-indent: -99999em;overflow: hidden;}
+.main-header h2{margin: 20px 20px;font-weight: 400;font-size: 16px;line-height: 1;}
+
+.main-body{width: 100%;}
+.main-body-nav{margin:20px auto;font-size: 18px;text-align: center;width: 130px;;}
+.nav{height: 40px;list-style: none;text-align: center;line-height: 40px;}
+.nav li{float: left;font-size: 20px;width: 50%;text-align: center;}
+.nav li a{text-decoration: none;color: black;display: block;}
+.active{border-bottom: 3px solid gainsboro;}
+
+.view{width: 300px;margin: 0;float: none;text-align: left;}
+.view .input_box{border: 1px solid lightgray;border-radius: 3px;background: white;border-top: 0;}
+.view .input{position: relative;margin: 0;overflow: hidden;border-top: 1px solid lightgray;}
+.view input{border: 0;background: white;width: 100%;border-radius: 3px;height: 20px;line-height: 20px;margin:12px}
+
+/*注册框框*/
+.main-reg .reg-box{margin-top: 20px;}
+.main-reg .reg-btn{width: 300px;margin: 0;height: 40px;line-height: 40px;text-align:center;background: black;color: white;font-size: 16px;cursor: pointer;}
+.main-reg .reg-btn:hover{background: ;}
+.main-reg .agreement{text-align: center;font-size: 14px;}
+.main-reg .agreement a{text-decoration: none;}
+
+.main-login .login-box{margin-top: 20px;}
+.main-login .login-btn{width: 300px;margin: 0;height: 40px;line-height: 40px;background: black;color: white;font-size: 16px;cursor: pointer;}
+.main-login .phone-login{margin-top: 15px;}
+.main-login .phone-login a{text-decoration: none;color: black;font-size: 15px;}
+.main-login .phone-log{color: dodgerblue !important;}
+.main-login .unable-log{float: right;}
+.main-login .other-login{margin-top:15px ;}
+.main-login .social-log{font-size: 15px;}
+
+.QRCode{margin-top: 48px;position: relative;}
+.qcode button{height: 38px;width: 298px;border: 1px solid black;color: black;background:transparent;cursor:pointer;border-radius: 3px;}
+.qcode-show{position: absolute;left: 10px;bottom: 68px;width: 280px;height: 280px;color: #555;background-color: #fff;box-shadow: 0 0 8px 0 rgba(0,0,0,.15);border-radius: 10px;display: none;}
+.qcode-show img{position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;width: 220px;height: 220px;background-position: center;background-repeat: no-repeat;background-size: contain;}
+/*小三角*/
+.qcode-triangle{ position:absolute;  left:140px;  width:0;  height:0;  top:-35px;border-left:15px solid transparent;  border-right:15px solid transparent;  border-top:15px solid #fff;  }
+
+.footer{
+	text-align: center;
+}

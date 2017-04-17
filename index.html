@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>编乎 - 与世界分享你编的知识、经验和见解</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/canvas-particle.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+
+	<body>
+		<div id="particles-js"></div>
+		<div class="wrap">
+			<div class="header"></div>
+			<div class="main">
+				<div class="main-header">
+					<h1>编乎</h1>
+					<h2>与世界分享你编的知识、经验和见解</h2>
+				</div>
+				<div class="main-body">
+					<div class="main-body-nav">
+						<div class="main-nav">
+							<ul class="nav">
+								<li class="active">
+									<a href="#">注册</a>
+								</li>
+								<li>
+									<a href="#">登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-body-contain">
+						<div class="main-reg view" style="display: block;">
+							<form action=" " method="post">
+								<div class="input_box">
+									<div class="name input">
+										<input type="text" placeholder="姓名"/>									
+									</div>
+									<div class="email input">
+										<input type="text" placeholder="手机号(仅限于逸国大陆)"/>									
+									</div>
+									<div class="psw input">
+										<input type="password" placeholder="密码(不少于6位)"/>	
+									</div>
+								</div>
+								<div class="reg-box">
+									<input type="submit" value="注册编乎 " class="reg-btn"/>
+								</div>
+							</form>
+							<p class="agreement">点击「注册」按钮,即代表你同意<a href="#">《编乎协议》</a></p>
+						</div>
+						<div class="main-login view" style="display:none">
+							<form action=" " method="post">
+								<div class="input_box">
+									<div class="email input">
+										<input type="text" placeholder="手机号或邮箱"/>									
+									</div>
+									<div class="psw input">
+										<input type="password" placeholder="密码"/>	
+									</div>
+								</div>
+								<div class="login-box">
+									<input type="submit" value="登录" class="login-btn"/>
+								</div>
+								<div class="phone-login">
+									<a href="javascript:alert('对不起，老铁，我们暂未开通手机登录')" class="phone-log">手机验证码登录</a>
+									<a href=" " class="unable-log" id="unable">无法登录？</a>
+								</div>
+								<div class="other-login">
+									<span class="social-log">社交账号登录</span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="QRCode">
+						<!--二维码-->
+						<div class="qcode-show">
+							<img src="img/qcode.png" width="250px" height="250px"/>
+						</div>
+						<!--<div class="qcode-triangle "></div>-->
+						<div class="qcode"><button id="download">下载编乎 APP</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>
+					<span>&copy;2017编乎</span>
+					<span>编乎大事纪</span>
+					<span>我的编乎</span>
+				</p>
+				<p>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript ">
+		var num=0;
+		//注册登录切换	
+		$(".nav li ").click(function(){
+			$(this).addClass("active ").siblings().removeClass("active ");
+			var index = $(this).index();
+			$(".main-body-contain .view ").eq(index).show().siblings().hide();
+		})
+		$("#download ").click(function(){
+//			$(".qcode-show ").toggle(200);
+			num+=1;
+			console.log(num);
+			if(num/2 ==0 ){
+				console.log(num,1)
+				$(this).text("关闭二维码 ");
+			}else{
+				$(this).text("下载编乎 APP ");
+			}
+
+
+		});
+	
+	</script>
+</html>
