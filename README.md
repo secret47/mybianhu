@@ -1,2 +1,3 @@
 # mybianhu
-一个仿造的编乎。you know it
+一个仿造的编乎(http://yang47.com/demo/other/bianhu/)。you know it
+
